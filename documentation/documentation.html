@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Documentation - Race - Creative One Page Template</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/doc.css">
+
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+   
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  </head>
+
+  <body>   
+
+  	<div id="sidebar" role="navigation">
+      <div class="list-group">
+      	<span class="list-group-item">Table Of Contents</span>
+        <a href="#html" class="list-group-item">HTML Structure</a>
+        <a href="#css" class="list-group-item">CSS Files and Structure</a>
+        <a href="#images" class="list-group-item">Images</a>
+        <a href="#js" class="list-group-item">JavaScript</a>
+        <a href="#maps" class="list-group-item">Google Maps Configuration</a>
+        <a href="#form" class="list-group-item">Contact Form Configuration</a>
+        <a href="#credits" class="list-group-item">Sources and Credits</a>
+        <a href="#faq" class="list-group-item">FAQ</a>
+      </div>
+    </div>
+    <div class="content">        
+      <div class="jumbotron">
+        <h1>Race - Creative One Page Template</h1>
+        <p>By: <a href="http://themeforest.net/user/CodePark" target="_blank">CodePark</a></p>
+        <p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/CodePark">here</a>. Thanks so much!</p>
+        <div class="clearfix"></div>
+      </div>
+      <div id="html" class="section">
+      	<div class="page-header">
+      		<h2>HTML Structure</h2>
+      	</div>
+      	<article>
+      		<h3>The general page skeleton:</h3>        		
+      		<pre class="prettyprint">&lt;!-- Preloaded --&gt;
+&lt;div id=&quot;mask&quot;&gt;
+&lt;/div&gt;
+&lt;!-- End Preloaded --&gt;
+
+&lt;!-- Menu --&gt;
+&lt;aside id=&quot;menu&quot;&gt;
+&lt;/aside&gt;
+&lt;!-- End Menu --&gt;
+
+&lt;div id=&quot;wrap&quot;&gt;
+
+&lt;!-- Background --&gt;
+&lt;div id=&quot;backgrounds&quot; class=&quot;animated&quot;&gt;
+&lt;/div&gt;
+&lt;!-- End Background --&gt;
+
+&lt;!-- Home Section --&gt;
+&lt;div id=&quot;home&quot;&gt;
+&lt;/div&gt;
+&lt;!-- End Home Section --&gt;
+
+&lt;!-- Intro Section --&gt;
+&lt;section id=&quot;intro&quot; class=&quot;grey&quot;&gt;
+&lt;/section&gt;
+&lt;!-- End Intro Section --&gt;
+
+&lt;!-- About Section --&gt;
+&lt;section id=&quot;about&quot;&gt;
+&lt;/section&gt;
+&lt;!-- End About Section --&gt;
+
+&lt;!-- Numbers Section --&gt;
+&lt;section id=&quot;numbers&quot; class=&quot;grey&quot;&gt;
+&lt;/section&gt;
+&lt;!-- End Numbers Section --&gt;
+
+&lt;!-- Portfolio Section --&gt;
+&lt;section id=&quot;portfolio&quot;&gt;
+&lt;/section&gt;
+&lt;!-- End Portfolio Section --&gt;
+
+&lt;!-- Services Section --&gt;
+&lt;section id=&quot;services&quot; class=&quot;grey&quot;&gt;
+&lt;/section&gt;
+&lt;!-- End Services Section --&gt;
+
+&lt;!-- Team Section --&gt;
+&lt;section id=&quot;team&quot;&gt;
+&lt;/section&gt;
+&lt;!-- End Team Section --&gt;    
+
+&lt;!-- Pricing Section --&gt;
+&lt;section id=&quot;pricing&quot; class=&quot;grey&quot;&gt;
+&lt;/section&gt;
+&lt;!-- End Pricing Section --&gt;
+
+&lt;!-- Testimonials Section --&gt; 
+&lt;section id=&quot;testimonials&quot;&gt;
+&lt;/section&gt;
+&lt;!-- End Testimonials Section --&gt;
+
+&lt;!-- Clients Section --&gt;
+&lt;section id=&quot;clients&quot; class=&quot;grey&quot;&gt;
+&lt;/section&gt;
+&lt;!-- End Clients Section --&gt;
+
+&lt;!-- Blog Section --&gt;
+&lt;section id=&quot;blog&quot;&gt;
+&lt;/section&gt;
+&lt;!-- End Blog Section --&gt;
+
+&lt;!-- Contact Section --&gt;
+&lt;section id=&quot;contact&quot; class=&quot;grey&quot;&gt;
+&lt;/section&gt;
+&lt;!-- End Contact Section --&gt;
+
+&lt;!-- Footer --&gt;
+&lt;footer&gt;
+&lt;/footer&gt;
+&lt;!-- End Footer --&gt;
+
+&lt;/div&gt;</pre>
+          <p>The <b>'mask'</b> div, contains the page preloader.</p>
+          <p>We have two different classes for sections:</p>
+          <ul>
+            <li><b>standard</b> - A full width section</li>
+            <li><b>split</b> - A section with an image at side.</li>
+          </ul>
+          <p>To setup a split section, you'll see this:</p>
+          <pre class="prettyprint">&lt;section id=&quot;about&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;col-md-5 col-sm-8 col-md-offset-7 col-sm-offset-4&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;img-side img-left col-md-6 col-sm-4&quot;&gt;
+    &lt;div class=&quot;img-holder&quot;&gt;
+      &lt;img class=&quot;bg-img&quot; src=&quot;images/bg/4.jpg&quot; alt=&quot;&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+          <p>If you want the image at left you have to give the class <b>"img-left"</b> to the <b>"img-side"</b> div and create a div with offset marin inside the container, for example <b>"col-md-offset-7 col-sm-offset-4"</b>.</p>
+          <p>If you want the image at right, add the class <b>"img-right"</b> to the <b>"img-side"</b> div and remove the offset classes from the div inside the container.</p>
+
+					<h3>Portfolio</h3>
+					<p>The portfolio section is split into 2 parts: filters and projects grid:</p>
+					<pre class="prettyprint">
+&lt;section id=&quot;portfolio&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;title center&quot;&gt;
+      &lt;h2&gt;Portfolio&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;ul id=&quot;filters&quot;&gt;
+    ...
+    &lt;/ul&gt;
+    &lt;div id=&quot;projects&quot;&gt;
+    ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;     
+          </pre>
+
+          <p><b>Warning:</b> do not remove the <b>'portfolio-top'</b> and <b>'portfolio-bottom'</b> divs, without them the ajax portfolio will not work.</p>					
+					<h4>1) Filters</h4>
+					<pre class="prettyprint">
+&lt;!-- Portfolio Filters --&gt;
+&lt;ul id=&quot;filters&quot;&gt;
+&lt;li data-filter=&quot;*&quot;&gt;All&lt;/li&gt;
+&lt;li data-filter=&quot;.graphic&quot;&gt;Graphic&lt;/li&gt;
+&lt;li data-filter=&quot;.photography&quot;&gt;Photography&lt;/li&gt;
+&lt;li data-filter=&quot;.branding&quot;&gt;Branding&lt;/li&gt;
+&lt;li data-filter=&quot;.video&quot;&gt;Video&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- End Portfolio Filters --&gt;</pre>
+					<p>If you want to change the filters you just need to change the <b>text</b> and the <b>'data-filter'</b> attribute.</p>
+					<h3>2) Grid</h3>
+					<pre class="prettyprint">&lt;div id=&quot;projects&quot;&gt;
+  &lt;div class=&quot;project graphic printing&quot;&gt;
+    &lt;div class=&quot;project-overlay&quot;&gt;
+      &lt;div class=&quot;vcenter&quot;&gt;
+        &lt;div class=&quot;centrize&quot;&gt;
+          &lt;h4&gt;Spicemode&lt;/h4&gt;                
+          &lt;a href=&quot;project-1.html&quot; class=&quot;btn btn-white&quot;&gt;View&lt;/a&gt;
+          &lt;p&gt;Graphic / Printing&lt;/p&gt;                
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;img src=&quot;images/portfolio/1.jpg&quot; alt=&quot;&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+					<p>Each element is composed of:</p>
+					<ul>
+						<li><b>'project'</b> div: To work with the filters every '.project' div tag must the filter class (one or more), for example <b>graphic</b> and <b>printing</b></li>
+						<ul>
+							<li><b>Project image:</b> Located in <b>images/portfolio</b> folder.</li>
+							<li><b>'&lt;a&gt;':</b> The 'href' attribute of this tag must link to an existing html file, in this case <b>project-1.html</b></li>
+							<ul>
+								<li><b>'project-overlay':</b> contains name and category of the project.</li>
+							</ul>
+						</ul>
+					</ul>					
+					<h4>Project page</h4>
+					<p>The project page is an html file located in the <b>root directory</b> of the site (where there is the index.html file). Its structure is the following</p>
+					<pre class="prettyprint">&lt;section&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div id=&quot;project&quot;&gt;
+      &lt;div class=&quot;title center&quot;&gt;
+        &lt;h2&gt;Spicemode&lt;/h2&gt;
+        &lt;p&gt;Graphic / Printing&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+      &lt;div class=&quot;project-media&quot;&gt;
+        &lt;div class=&quot;project-slider flexslider&quot;&gt;
+          &lt;ul class=&quot;slides&quot;&gt;
+            &lt;li&gt;&lt;img src=&quot;images/portfolio/1.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;img src=&quot;images/portfolio/3.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;img src=&quot;images/portfolio/4.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;        
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+				<p>If you don't want to use the slider, you just need to replace the <b>'project-slider'</b> div with a simple <b>img</b> tag. <b>Like this:</b></p>
+				<pre class="prettyprint">&lt;div class=&quot;project-media&quot;&gt;
+&lt;img src=&quot;images/portfolio/1.jpg&quot;&gt;
+&lt;/div&gt;</pre>
+					<p>If you want to use a <b>video</b> instead of images, do the following:</p>
+					<pre class="prettyprint">&lt;div class=&quot;project-media&quot;&gt;
+&lt;div class=&quot;video-container&quot;&gt;
+    &lt;iframe src=&quot;http://www.youtube.com/embed/Jz-7Di2s4yY&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+					<p>* Replace with the url of the video you want.</p>
+      	</article>
+      </div>
+      <div id="css" class="section">
+      	<div class="page-header">
+      		<h2>CSS Files and Structure</h2>
+      	</div>
+      	<article>
+      		<div class="alert alert-warning">
+      			<b>Warning!</b> Unless you are familiar with <b>CSS</b>, I strongly advise you not to play around with these files.
+    			</div>
+          <p>All css files are in <b>/css/</b> folder.</p>
+    			<h3>Files:</h3>
+    			<ul>
+    				<li><b>animate.css</b> - CSS3 animations</li>
+    				<li><b>bootstrap.css</b> - Bootstrap Framework</li>
+            <li><b>bootstrap.min.css</b> - Minified Bootstrap Framework</li>
+    				<li><b>flexslider.css</b> - Flexslider style</li>
+    				<li><b>fontello.css</b> - Icon font</li>
+    				<li><b>owl-carousel.css</b> - Horizontal carousel</li>
+    				<li><b>style.css</b> - The main CSS file.</li>
+    			</ul>
+      	</article>
+      </div>
+      <div id="images" class="section">
+      	<div class="page-header">
+      		<h2>Images</h2>
+      	</div>
+      	<article>
+          <p>All images are in <b>/images/</b> folder.</p>
+      		<p>To change the images (e.g Portfolio images, or team component photos), you just need to replace the existing with the new images.</p>
+      		<h3>Folder structure:</h3>
+      		<ul>
+      			<li><b>/bg/</b> - Contains all background images</li>
+            <li><b>/blog/</b> - Contains blog images</li>
+      			<li><b>/clients/</b> - Contains clients logos</li>
+      			<li><b>/portfolio/</b> - Contains projects images</li>
+      			<li><b>/team/</b> - Contains team components photos</li>
+      			<li><b>/testimonials/</b> - Contains testimonials photos</li>
+      		</ul>
+      	</article>
+      </div>
+      <div id="js" class="section">
+      	<div class="page-header">
+      		<h2>JavaScript</h2>
+      	</div>
+      	<article>
+      		<div class="alert alert-warning">
+      			<b>Warning!</b> Unless you are familiar with <b>jQuery</b>, I strongly advise you not to play around with these files.
+    			</div>
+          <p>All scripts are in <b>/js/</b> folder and they are called at the bottom of the page to make website load faster.</p>
+          <pre class="prettyprint">&lt;!-- JS Libraries --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins.min.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Google Maps JS File --&gt;
+&lt;script src=&quot;https://maps.googleapis.com/maps/api/js?v=3.exp&amp;amp;sensor=false&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Main.js File --&gt;  
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/main.js&quot;&gt;&lt;/script&gt;</pre>
+    			<p>The file <b>plugins.js</b> contains the following libraries:</p>
+    			<ul>      				
+    				<li><b>bootstrap.js</b> - Bootstrap framework</li>
+    				<li><b>flexslider.js</b> - Content slider</li>
+    				<li><b>jquery.appear.js</b> - jQuery plugin for tracking element's appearance</li>    				
+    				<li><b>jquery.countTo.js</b> - A jQuery plugin that will count up (or down) to a target number at a specified speed.</li>
+            <li><b>jquery.county.js</b> - A jQuery plugin for countdown.</li>
+    				<li><b>jquery.mb.YTPlayer.js</b> - Youtube video background</li>
+    				<li><b>isotope.js</b> - Portfolio filtering plugin</li>
+    				<li><b>jquery.validation.min.js</b> - Forms validation</li>
+    				<li><b>owl.carousel.min.js</b> - Simple horizontal carousel</li>
+            <li><b>jquery.parallax.min.js</b> - A plugin for parallax effects</li>
+            <li><b>rotator.js</b> - Preloader animation</li>
+    			</ul>
+    			<h3>main.js</h3>
+    			<p>This is the main javascript file, <b>you can make your changes here.</b></p>
+      	</article>
+      </div>
+      <div id="maps" class="section">
+        <div class="page-header">
+          <h1>Google Maps Configuration</h1>
+        </div>
+        <article>
+          <p>In the main.js file, you can define your latitude and longitude. To set them, do the following:</p>
+          <p>Open the <b>main.js</b> file, in the <b>/js/</b> folder, and go to the line 352:</p>
+          <pre class="prettyprint">var myLatlng = new google.maps.LatLng(40.773328,-73.960088); // &lt;- Your latitude and longitude</pre>
+          <p>Replace <b>'40.773328,-73.960088'</b> with your latitude and longitude <b>(without spaces).</b> You can find them <a href="http://universimmedia.pagesperso-orange.fr/geo/loc.htm">here</a></p>
+        </article>
+      </div>
+      <div id="form" class="section">
+        <div class="page-header">
+          <h1>Contact Form Configuration</h1>
+        </div>
+        <article>
+          <p>The contact form is submitted without page refresh (AJAX), you just need to set your email address in the <b>contact.php</b> file.</p>
+          <pre class="prettyprint lang-php">$to = &quot;email@yourdomain.com&quot;; # &lt;--- Your Email</pre>
+          <p>Replace <b>email@domain.com</b> with your email address. That's it.</p>
+        </article>
+      </div>
+      <div id="credits" class="section">
+        <div class="page-header">
+          <h1>Sources and Credits</h1>
+        </div>
+        <article>
+          <ul>
+            <li>Fonts</li>
+            <ul>
+              <li><a target="_blank" href="http://www.google.com/fonts/specimen/Montserrat">Montserrat</a></li>
+              <li><a target="_blank" href="http://www.google.com/fonts/specimen/PT+Serif">PT Serif</a></li>
+            </ul>
+            <li>CSS</li>
+            <ul>
+              <li><a target="_blank" href="https://github.com/daneden/animate.css">animate.css</a></li>
+              <li><a target="_blank" href="https://github.com/twbs/bootstrap">bootstrap.css</a></li>
+              <li><a target="_blank" href="http://fontello.com/">fontello.css</a></li>
+            </ul>
+            <li>JavaScript</li>
+            <ul>
+              <li><a target="_blank" href="https://github.com/twbs/bootstrap">bootstrap.js</a></li>
+              <li><a target="_blank" href="https://github.com/woothemes/flexslider">flexslider.js</a></li>
+              <li><a target="_blank" href="https://github.com/bas2k/jquery.appear/">jquery.appear.js</a></li>
+              <li><a target="_blank" href="https://github.com/mhuggins/jquery-countTo">jquery.countTo.js</a></li>
+              <li><a target="_blank" href="https://sonnyt.com">jquery.county.js</a></li>
+              <li><a target="_blank" href="https://github.com/pupunzi/jquery.mb.YTPlayer">jquery.mb.YTPlayer.js</a></li>
+              <li><a target="_blank" href="http://isotope.metafizzy.co/">isotope.min.js</a></li>
+              <li><a target="_blank" href="https://github.com/jzaefferer/jquery-validation">jquery.validation.min.js</a></li>
+              <li><a target="_blank" href="https://github.com/OwlFonk/OwlCarousel">owl.carousel.min.js</a></li>
+              <li><a target="_blank" href="http://www.ianlunn.co.uk/plugins/jquery-parallax/">jquery.parallax.min.js</a></li>
+            </ul>              
+          </ul>
+        </article>
+      </div>
+      <div id="faq" class="section">
+        <div class="page-header">
+          <h1>FAQ</h1>
+        </div>
+        <article>          
+        <h3>How to change the version of the theme?</h3>
+        <p>This theme has four different styles, two with sidebar menu and two with header menu:</p>
+        <h5>Sidebar version:</h5>
+        <ul>
+          <li><b>index.html</b> - with animated background slider.</li>
+          <li><b>index-2.html</b> - with video background.</li>
+        </ul>
+        <h5>Header version:</h5>
+        <ul>
+          <li><b>index-3.html</b> - with animated background slider.</li>
+          <li><b>index-4.html</b> - with video background.</li>
+        </ul>
+        <p>In almost all hosting providers, the main page must be named index.html. So, if you want to use the a different version, you need to rename it to <b>index.html,</b> but first, remember to rename the existing 'index.html' to not lose the default version.</p>
+        <h3>How to change the icons?</h3>
+        <p>All icons are provided with fontello, in the <b>Linecons</b> package. Their structure is similar to the following:</p>
+        <pre class="prettyprint">&lt;i class=&quot;icon-shop&quot;&gt;&lt;/i&gt;</pre>
+        <p>If you want to change an icon on this theme, just find it at this <a href="http://www.flaticon.com/packs/linecons">link</a>, and, in this case, replace the 'shop' class, with the class of the icon you want.</p>
+        <h3>How to add or remove animations to elements?</h3>
+        <p>If you want to add animation to an element, you need to add to it the class <b>"animated"</b> and set the <b>'data-animation'</b> attribute.</p>
+        <ul>
+          <li>The <b>animated</b> class add the animation to the element.</li>
+          <li>The <b>data-animation</b> is the name of the animation you want to use.</li>            
+        </ul>
+        <p><b>For example:</b></p>
+        <pre class="prettyprint">&lt;div class=&quot;container animated&quot; data-animation=&quot;fadeInRight&quot;&gt;
+...
+&lt;/div&gt;</pre>
+          <p>This example add the <b>fadeInRight</b> animation to the element.</p>
+          <p>If you want to animate a set of element one at a time, you need to add the <b>'data-delay'</b> attribute. <b>For example:</b></p>
+          <pre class="prettyprint">&lt;div class=&quot;counter animated&quot; data-animation=&quot;fadeInUp&quot; data-delay=&quot;0&quot;&gt;
+...
+&lt;/div&gt;
+&lt;div class=&quot;counter animated&quot; data-animation=&quot;fadeInUp&quot; data-delay=&quot;500&quot;&gt;
+...
+&lt;/div&gt;
+&lt;div class=&quot;counter animated&quot; data-animation=&quot;fadeInUp&quot; data-delay=&quot;1000&quot;&gt;
+...
+&lt;/div&gt;
+&lt;div class=&quot;counter animated&quot; data-animation=&quot;fadeInUp&quot; data-delay=&quot;1500&quot;&gt;
+...
+&lt;/div&gt;</pre>
+          <p>With this example, every 500 milliseconds an element is animated.</p>
+          <p>To remove animation from an element, you just need to remove the class <b>"animated"</b> and remove the <b>"data-animation"</b> attribute.</p>
+          <p>You can find all available animations <a target="_blank" href="http://daneden.github.io/animate.css/">here</a></p>
+        </article>
+      </div>
+    </div>      
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+  </body>
+</html>
